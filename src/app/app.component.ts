@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-    pudim = "pudim";
-    
+  mensagemTitulo = 'Seja bem vindo';
+  pudim = "pudim";
+
 }
