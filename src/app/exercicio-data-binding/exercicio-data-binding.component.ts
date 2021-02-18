@@ -11,6 +11,7 @@ export class ExercicioDataBindingComponent implements OnInit {
 
   imageURL = 'https://i.pinimg.com/736x/da/b2/58/dab2581bf4026a9dde0eac825ece58c2.jpg';
   isDisabled = true;
+  valorDigitado = '';
 
   constructor() { 
 
@@ -26,6 +27,12 @@ export class ExercicioDataBindingComponent implements OnInit {
   getImage() {
 
     return this.imageURL;
+
+  }
+
+  textoDigitado($event) {
+
+    this.valorDigitado = $event.target.value;
 
   }
 
