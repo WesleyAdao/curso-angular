@@ -10,4 +10,10 @@ export class AppComponent {
   mensagemTitulo = 'Seja bem vindo';
   pudim = "pudim";
 
+  recebendoClicado($event) {
+
+    console.log('Evento recebido', $event);
+
+  }
+
 }

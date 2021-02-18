@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-exercicio-data-binding',
@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ExercicioDataBindingComponent implements OnInit {
 
   @Input() palavra!: string;
+  @Output() clicado = new EventEmitter();
 
   imageURL = 'https://i.pinimg.com/736x/da/b2/58/dab2581bf4026a9dde0eac825ece58c2.jpg';
   isDisabled = true;
@@ -34,6 +35,13 @@ export class ExercicioDataBindingComponent implements OnInit {
 
     this.valorDigitado = $event.target.value;
 
+  }
+
+  emitir($event) {
+
+    console.log('Emitindo dado');
+    this.clicado.emit($event);
+    
   }
 
 }
