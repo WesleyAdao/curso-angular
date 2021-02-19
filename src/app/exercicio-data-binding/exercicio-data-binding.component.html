@@ -1,5 +1,16 @@
+<h1>Exemplos de Data Binding:</h1>
 
-<h1>Exemplos de Event Binding:</h1>
+valorContador: {{ valorContador }}
+
+<app-exercicio-contador
+
+[(valor)] = "valorContador"
+
+></app-exercicio-contador>
+
+<br><br><hr>
+
+<h2>Exemplos de Event Binding:</h2>
 
 <button
 
@@ -9,7 +20,7 @@
 
 <br><br>
 
-<h2>Valor do Input: {{ valorDigitado }}</h2>
+<h3>Valor do Input: {{ valorDigitado }}</h3>
 
 <input type="text" 
 
@@ -17,11 +28,11 @@
     
 />
 
-<br><br>
+<br><br><hr>
 
-<h1>Exemplos de Property Binding:</h1>
+<h2>Exemplos de Property Binding:</h2>
 
-<h2>Palavra: {{ palavra }}</h2>
+<h3>Palavra: {{ palavra }}</h3>
 
 <br><br>
 

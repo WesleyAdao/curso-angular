@@ -16,15 +16,4 @@ export class AppComponent {
 
   }
 
-  valorAtual(novoValor) {
-
-    console.log(novoValor);
-
-  }
-
-  // recebeContador() {
-
-
-  // }
-
 }

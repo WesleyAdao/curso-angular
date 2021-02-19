@@ -13,6 +13,7 @@ export class ExercicioDataBindingComponent implements OnInit {
   imageURL = 'https://i.pinimg.com/736x/da/b2/58/dab2581bf4026a9dde0eac825ece58c2.jpg';
   isDisabled = true;
   valorDigitado = '';
+  valorContador = 10;
 
   constructor() { 
 
@@ -43,5 +44,6 @@ export class ExercicioDataBindingComponent implements OnInit {
     this.clicado.emit($event);
     
   }
+
 
 }
