@@ -35,6 +35,18 @@ module.exports = {
         "@typescript-eslint",
         "@typescript-eslint/tslint"
     ],
+        {
+          files: ["src/**/*.ts", "src/**/*.tsx"],
+          parser: "@typescript-eslint/parser",
+          plugins: ["@typescript-eslint"],
+          rules: {
+            "no-unused-vars": "off",
+            "@typescript-eslint/ban-types": "error",
+            "@typescript-eslint/no-explicit-any": "error",
+            "@typescript-eslint/no-non-null-assertion": "error",
+          },
+        },
+      ],
     "rules": {
         "@angular-eslint/component-class-suffix": "error",
         "@angular-eslint/component-selector": [
