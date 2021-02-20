@@ -66,3 +66,34 @@
 
 </ng-template>
 
+<hr>
+
+<h2>Usando ngFor:</h2>
+
+<h3>Lista de Frutas:</h3>
+
+<!--Array Simples-->
+
+<ul>
+
+    <li *ngFor = "let fruta of listaFrutas"> 
+
+        {{ fruta }}
+    
+    </li>
+
+</ul>
+
+<!--Array de Objetos e index-->
+
+<h3>Lista de Carros:</h3>
+
+<ul>
+
+    <li *ngFor = "let carro of listaCarros; let index = index"> 
+
+        {{ index + 1 }} - Carro: {{ carro.nomeCarro }}, Cor: {{ carro.cor }}
+        
+    </li>
+
+</ul>

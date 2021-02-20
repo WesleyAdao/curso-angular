@@ -8,7 +8,24 @@ import { Component } from '@angular/core';
 export class ExercicioDiretivasComponent {
 
   conteudo = true;
-  valor;
+  listaFrutas = ['Maçã', 'Laranja', 'Mamão', 'Pêra'];
+  listaCarros = [{
+    nomeCarro: 'Civic',
+    cor: 'Preto',
+  },
+  {
+    nomeCarro: 'Corola',
+    cor: 'Azul',
+  },
+  {
+    nomeCarro: 'Azera',
+    cor: 'Prata',
+  },
+  {
+    nomeCarro: 'City',
+    cor: 'Vermelho'
+  }
+];
 
   mudar() {
 
