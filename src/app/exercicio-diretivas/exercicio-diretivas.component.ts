@@ -1,15 +1,25 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-exercicio-diretivas',
   templateUrl: './exercicio-diretivas.component.html',
   styleUrls: ['./exercicio-diretivas.component.css']
 })
-export class ExercicioDiretivasComponent implements OnInit {
+export class ExercicioDiretivasComponent {
 
-  constructor() { }
+  conteudo = true;
+  valor;
 
-  ngOnInit(): void {
+  mudar() {
+
+    this.conteudo = !this.conteudo;
+
+  }
+
+  somar(n1, n2) {
+
+    return n1 + n2;
+
   }
 
 }

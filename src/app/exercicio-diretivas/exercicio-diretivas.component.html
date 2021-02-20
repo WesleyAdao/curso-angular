@@ -1,1 +1,68 @@
-<p>exercicio-diretivas works!</p>
+<h1>Exemplos de Diretivas:</h1>
+<h2>Usando ngIf:</h2>
+<h2>Usando *ngIf:</h2>
+
+<button
+
+    (click) = "mudar()"
+
+>ativa/desativa</button>
+
+<!--Usando variável-->
+
+<div *ngIf = "conteudo">
+
+    <h3>Sou conteúdo do *ngIf</h3>
+
+</div>
+
+<!--Usando função-->
+
+<div *ngIf = "somar(6, 5) > 10">
+
+    <h3>Sou maior do que 10</h3>
+
+</div>
+
+<h2>Usando ng-template [ngIf]:</h2>
+
+<ng-template [ngIf] = "conteudo">
+
+    <h3>Sou conteúdo do ng-template [ngIf]</h3>
+
+</ng-template>
+
+<h2>Usando else</h2>
+
+<div *ngIf = "conteudo; else elseConteudo">
+
+    <h3>Sou verdadeiro</h3>
+
+</div>
+
+<ng-template #elseConteudo>
+
+    <h3>Sou falso</h3>
+
+</ng-template>
+
+<h2>Usando blocos para if e else</h2>
+
+<div *ngIf = "conteudo; then conteudoVerdadeiro else conteudoFalso">
+
+    <h3>Sou verdadeiro</h3>
+
+</div>
+
+<ng-template #conteudoVerdadeiro>
+
+    <h3>Sou verdadeiro</h3>
+
+</ng-template>
+
+<ng-template #conteudoFalso>
+
+    <h3>Sou falso</h3>
+
+</ng-template>
+
