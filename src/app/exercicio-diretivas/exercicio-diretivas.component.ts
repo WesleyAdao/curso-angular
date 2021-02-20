@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MEMES_AGRUPADOS_POR_CATEGORIA } from './exercicios-diretivas.constante';
 
 @Component({
   selector: 'app-exercicio-diretivas',
@@ -8,6 +9,8 @@ import { Component } from '@angular/core';
 export class ExercicioDiretivasComponent {
 
   conteudo = true;
+  prefixoImagens = "https://raw.githubusercontent.com/vitorfgsantos/angular-memes-diretivas/master/images";
+  MEMES_AGRUPADOS_POR_CATEGORIA  = MEMES_AGRUPADOS_POR_CATEGORIA ;
   listaFrutas = ['Maçã', 'Laranja', 'Mamão', 'Pêra'];
   listaCarros = [{
     nomeCarro: 'Civic',

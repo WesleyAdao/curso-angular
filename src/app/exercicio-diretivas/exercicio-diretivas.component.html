@@ -97,3 +97,26 @@
     </li>
 
 </ul>
+
+<hr>
+
+<h1>Exercício de Diretivas:</h1>
+
+
+<ul>
+
+    <li *ngFor = "let memesAgrupados of MEMES_AGRUPADOS_POR_CATEGORIA"> 
+
+        <h2>Catergoria: {{ memesAgrupados.categoria }}</h2>
+        <div *ngFor = "let meme of memesAgrupados.memes; let par = even">
+
+            <img [src] = "prefixoImagens + meme.imagemURL" *ngIf = "par">
+            <h2 *ngIf = "!par">Par</h2>
+
+        </div>
+        
+    </li>
+
+</ul>
+
+
