@@ -14,3 +14,28 @@
     font-size: 2rem;
 
 }
+
+.listaMenu {
+
+    background-color: #6a77bb;
+    
+}
+
+.lista {
+
+    display: inline;
+}
+
+.link {
+
+    display: inline-block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+.vermelho {
+
+    background-color: red;
+}
