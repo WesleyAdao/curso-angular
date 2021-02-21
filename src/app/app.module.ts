@@ -13,6 +13,7 @@ import { ExercicioNgclassComponent } from './shared/components/exercicio-ngclass
 import { ExercicioPipesComponent } from './shared/components/exercicio-pipes/exercicio-pipes.component';
 import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
+import { LoginComponent } from './login/login.component';
 
 registerLocaleData(localePt, 'pt');
 
@@ -26,7 +27,8 @@ registerLocaleData(localePt, 'pt');
     ExercicioContadorComponent,
     ExercicioDiretivasComponent,
     ExercicioNgclassComponent,
-    ExercicioPipesComponent
+    ExercicioPipesComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
